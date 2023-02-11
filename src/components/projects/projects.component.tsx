@@ -1,4 +1,4 @@
-import { ProjectsComponent, ProjectsGrid, ProjectCard, ProjectDescription } from "./projects.style";
+import { ProjectsComponent, ProjectsGrid, ProjectCard, ProjectDescription, ProjectEnding, Link } from "./projects.style";
 
 export const Projects = () => {
     return (
@@ -21,6 +21,7 @@ export const Projects = () => {
                     <h3>Titolo</h3>
                     <ProjectDescription>Descrizione</ProjectDescription>
                 </ProjectCard>
+                <ProjectEnding>More projects available on my <Link href="https://github.com/timothyrusso" target='_blank'>GitHub</Link> profile.</ProjectEnding>
             </ProjectsGrid>
         </ProjectsComponent>
     )

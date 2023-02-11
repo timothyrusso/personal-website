@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsComponent = styled.section`
-  margin-bottom: 35px;
+  margin-bottom: 0;
 `
 
 export const ProjectsGrid = styled.ul`
@@ -10,6 +10,7 @@ export const ProjectsGrid = styled.ul`
   list-style-type: none;
   gap: 20px;
   padding: 0;
+  margin-bottom: 0;
 `
 
 export const ProjectCard = styled.li`
@@ -27,4 +28,15 @@ export const ProjectCard = styled.li`
 
 export const ProjectDescription = styled.p`
   margin-top: 0;
+`
+
+export const ProjectEnding = styled.p`
+  margin: 0;
+`
+
+export const Link = styled.a`
+  color: black;
+  &:hover {
+    color: white;
+  }
 `
