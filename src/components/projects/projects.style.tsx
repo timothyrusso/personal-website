@@ -11,6 +11,10 @@ export const ProjectsGrid = styled.ul`
   gap: 20px;
   padding: 0;
   margin-bottom: 0;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+}
 `
 
 export const ProjectCard = styled.li`

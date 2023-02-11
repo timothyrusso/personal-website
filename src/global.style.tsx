@@ -8,4 +8,10 @@ export const GlobalStyle = createGlobalStyle`
         margin: auto;
         font-family: 'Inter', sans-serif;
     }
+
+    @media screen and (max-width: 1000px) {
+        body {
+            padding: 0 15px;
+        }
+      }
 `
