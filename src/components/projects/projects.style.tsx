@@ -18,7 +18,7 @@ export const ProjectCard = styled.li`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 20px;
+  padding: 0 20px;
   &:hover {
     color: white;
     cursor: pointer;
@@ -26,8 +26,13 @@ export const ProjectCard = styled.li`
   }
 `
 
+export const ProjectTitle = styled.h3`
+  margin-bottom: 10px;
+`
+
 export const ProjectDescription = styled.p`
   margin-top: 0;
+  text-decoration: none;
 `
 
 export const ProjectEnding = styled.p`
@@ -36,6 +41,14 @@ export const ProjectEnding = styled.p`
 
 export const Link = styled.a`
   color: black;
+  &:hover {
+    color: white;
+  }
+`
+
+export const ProjectLink = styled.a`
+  color: black;
+  text-decoration: none;
   &:hover {
     color: white;
   }
