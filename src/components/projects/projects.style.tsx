@@ -32,11 +32,17 @@ export const ProjectCard = styled.li`
 
 export const ProjectTitle = styled.h3`
   margin-bottom: 10px;
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 export const ProjectDescription = styled.p`
   margin-top: 0;
   text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 export const ProjectEnding = styled.p`
