@@ -32,6 +32,7 @@ export const ProjectCard = styled.li`
 
 export const ProjectTitle = styled.h3`
   margin-bottom: 10px;
+  text-decoration: underline;
   &:hover {
     cursor: pointer;
   }
