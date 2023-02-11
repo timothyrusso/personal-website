@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsComponent = styled.section`
-  margin-bottom: 0;
+  margin-bottom: 35px;;
 `
 
 export const ProjectsGrid = styled.ul`
