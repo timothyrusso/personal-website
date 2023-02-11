@@ -1,4 +1,4 @@
-import { ProjectsComponent, ProjectsGrid, ProjectCard, ProjectTitle } from "./projects.style";
+import { ProjectsComponent, ProjectsGrid, ProjectCard, ProjectDescription } from "./projects.style";
 
 export const Projects = () => {
     return (
@@ -6,14 +6,20 @@ export const Projects = () => {
             <h2>Projects</h2>
             <ProjectsGrid>
                 <ProjectCard>
-                    <ProjectTitle>Titolo</ProjectTitle>
-                    <p>Descrizione</p>
+                    <h3>Titolo</h3>
+                    <ProjectDescription>Descrizione</ProjectDescription>
                 </ProjectCard>
                 <ProjectCard>
-                    <ProjectTitle>Titolo</ProjectTitle>
+                    <h3>Titolo</h3>
+                    <ProjectDescription>Descrizione</ProjectDescription>
                 </ProjectCard>
                 <ProjectCard>
-                    <ProjectTitle>Titolo</ProjectTitle>
+                    <h3>Titolo</h3>
+                    <ProjectDescription>Descrizione</ProjectDescription>
+                </ProjectCard>
+                <ProjectCard>
+                    <h3>Titolo</h3>
+                    <ProjectDescription>Descrizione</ProjectDescription>
                 </ProjectCard>
             </ProjectsGrid>
         </ProjectsComponent>

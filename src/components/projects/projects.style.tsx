@@ -25,4 +25,6 @@ export const ProjectCard = styled.li`
   }
 `
 
-export const ProjectTitle = styled.h3``
+export const ProjectDescription = styled.p`
+  margin-top: 0;
+`
