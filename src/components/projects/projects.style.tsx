@@ -46,7 +46,7 @@ export const ProjectDescription = styled.p`
   }
 `
 
-export const ProjectEnding = styled.ul`
+export const ProjectEnding = styled.li`
   margin: 0;
   list-style-type: none;
   padding: 0;
