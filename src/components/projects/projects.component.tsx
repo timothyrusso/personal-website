@@ -8,7 +8,7 @@ export const Projects = () => {
                 <ProjectCard>
                     <ProjectLink href="https://github.com/timothyrusso/crwn-clothing" target='_blank'>
                         <ProjectTitle>crwn-clothing</ProjectTitle>
-                        <ProjectDescription>Simple eCommerce web application made with React.js, Typescript and Redux</ProjectDescription>
+                        <ProjectDescription>Ecommerce web application made with React.js, Typescript, Redux and Firebase</ProjectDescription>
                     </ProjectLink>
                 </ProjectCard>
                 <ProjectCard>
@@ -26,7 +26,7 @@ export const Projects = () => {
                 <ProjectCard>
                     <ProjectLink href="https://github.com/timothyrusso/web_project_1" target='_blank'>
                         <ProjectTitle>learning-how-to-learn</ProjectTitle>
-                        <ProjectDescription>Landing page with some cool effects</ProjectDescription>
+                        <ProjectDescription>Landing page with some cool css effects</ProjectDescription>
                     </ProjectLink>
                 </ProjectCard>
                 <ProjectEnding>More projects available on my <Link href="https://github.com/timothyrusso" target='_blank'>GitHub</Link> profile.</ProjectEnding>

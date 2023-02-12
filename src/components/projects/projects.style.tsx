@@ -46,8 +46,10 @@ export const ProjectDescription = styled.p`
   }
 `
 
-export const ProjectEnding = styled.p`
+export const ProjectEnding = styled.ul`
   margin: 0;
+  list-style-type: none;
+  padding: 0;
 `
 
 export const Link = styled.a`
