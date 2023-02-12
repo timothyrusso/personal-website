@@ -14,7 +14,7 @@ export const Projects = () => {
                 <ProjectCard>
                     <ProjectLink href="https://github.com/timothyrusso/news-explorer-frontend" target='_blank'>
                         <ProjectTitle>news-explorer</ProjectTitle>
-                        <ProjectDescription>Full stack application where users can search news from a public API and save them in their profiles.</ProjectDescription>
+                        <ProjectDescription>Full stack application where users can search news from a public API and save them in their profiles</ProjectDescription>
                     </ProjectLink>
                 </ProjectCard>
                 <ProjectCard>

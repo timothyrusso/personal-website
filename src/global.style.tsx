@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import './fonts/fonts.css';
 
 export const GlobalStyle = createGlobalStyle`
     body {
@@ -7,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 980px !important;
         margin: auto;
         font-family: 'Inter', sans-serif;
+        font-weight: 600;
     }
 
     @media screen and (max-width: 1000px) {
