@@ -20,11 +20,11 @@ export const ProjectsGrid = styled.ul`
 export const ProjectCard = styled.li`
   border: 2px solid black;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   padding: 0 20px;
+  min-height: 138px;
   &:hover {
-    color: white;
     cursor: pointer;
     border-color: white;
   }
@@ -54,15 +54,9 @@ export const ProjectEnding = styled.li`
 
 export const Link = styled.a`
   color: black;
-  &:hover {
-    color: white;
-  }
 `
 
 export const ProjectLink = styled.a`
   color: black;
   text-decoration: none;
-  &:hover {
-    color: white;
-  }
 `

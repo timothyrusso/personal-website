@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: auto;
         font-family: 'Inter', sans-serif;
         font-weight: 600;
+        font-size: 18px;
     }
 
     @media screen and (max-width: 1000px) {
