@@ -1,8 +1,8 @@
-import { DescriptionComponent } from "./description.style"
+import { DescriptionComponent, MultiColoredText } from "./description.style"
 
 export const Description = () => {
     return (
-        <DescriptionComponent>I’m a motivated and passionate Frontend Engineer with a background in eCommerce, Quality Assurance, Application Delivery Management, Project Management and Trade Marketing.
+        <DescriptionComponent>I’m a motivated and passionate <MultiColoredText>Frontend Engineer</MultiColoredText> with a background in eCommerce, Quality Assurance, Application Delivery Management, Project Management and Trade Marketing.
 
             I have a bachelor’s degree in Economics and Business Management and I have done a software developer online coding bootcamp called Practicum.
 

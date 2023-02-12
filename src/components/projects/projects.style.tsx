@@ -54,6 +54,10 @@ export const ProjectEnding = styled.li`
 
 export const Link = styled.a`
   color: black;
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
 `
 
 export const ProjectLink = styled.a`
