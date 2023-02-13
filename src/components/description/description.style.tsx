@@ -6,8 +6,8 @@ export const DescriptionComponent = styled.p`
 `
 
 export const MultiColoredText = styled.span`
-        background: -webkit-linear-gradient(60deg, #f32170,
-        #ff6b08, #cf23cf, #eedd44);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(60deg, #f32170,
+    #ff6b08, #cf23cf, #eedd44);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 `
