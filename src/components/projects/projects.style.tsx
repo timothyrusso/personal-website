@@ -17,9 +17,8 @@ export const ProjectsGrid = styled.ul`
 }
 `
 
-export const ProjectEnding = styled.li`
-  margin: 0;
-  list-style-type: none;
+export const ProjectEnding = styled.div`
+  margin-top: 20px;
   padding: 0;
 `
 

@@ -10,8 +10,8 @@ export const ProjectsComponent = () => {
                 {projects.map((project) => {
                     return <ProjectCardComponent key={project.id} title={project.title} link={project.link} description={project.description} />
                 })}
-                <ProjectEnding>More projects available on my <Link href="https://github.com/timothyrusso" target='_blank'>GitHub</Link> profile.</ProjectEnding>
             </ProjectsGrid>
+            <ProjectEnding>More projects available on my <Link href="https://github.com/timothyrusso" target='_blank'>GitHub</Link> profile.</ProjectEnding>
         </Projects>
     )
 }
