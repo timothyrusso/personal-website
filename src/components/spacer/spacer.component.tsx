@@ -1,7 +1,7 @@
-import { SpacerComponent } from "./spacer.style";
+import { Spacer } from "./spacer.style";
 
-export const Spacer = () => {
+export const SpacerComponent = () => {
     return (
-        <SpacerComponent />
+        <Spacer />
     )
 }

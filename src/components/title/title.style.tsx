@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const TitleComponent = styled.div`
+export const Title = styled.div`
     font-size: 50px;
     margin: 55px 0 35px 0;
     font-weight: 700;

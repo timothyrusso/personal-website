@@ -1,9 +1,9 @@
-import { TitleComponent } from "./title.style"
+import { Title } from "./title.style"
 
-export const Title = () => {
+export const TitleComponent = () => {
     return (
-        <TitleComponent>
+        <Title>
             Hi 👋 I'm Timothy Russo
-        </TitleComponent>
+        </Title>
     )
 }
