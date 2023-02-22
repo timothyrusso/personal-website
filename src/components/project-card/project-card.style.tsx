@@ -15,6 +15,7 @@ export const ProjectCard = styled.li`
 export const ProjectLink = styled.a`
   color: black;
   text-decoration: none;
+  min-height: 138px;
 `
 
 export const ProjectTitle = styled.h3`
