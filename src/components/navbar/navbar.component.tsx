@@ -1,10 +1,16 @@
 import { TitleComponent } from "../title/title.component"
+import { DarkModeButtonComponent } from "../dark-mode-button/dark-mode-button.component"
+import { FC } from "react"
 
-export const NavbarComponent = () => {
+type NavbarComponentProps = {
+    toggle: () => void;
+}
+
+export const NavbarComponent: FC<NavbarComponentProps> = ({ toggle }) => {
     return (
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <TitleComponent />
-            <div style={{ width: '40px', backgroundColor: 'red', height: '40px', alignSelf: 'center' }} />
+            <DarkModeButtonComponent toggle={toggle} />
         </div>
     )
 }

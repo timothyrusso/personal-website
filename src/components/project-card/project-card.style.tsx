@@ -1,7 +1,15 @@
 import styled from "styled-components";
 
-export const ProjectCard = styled.li`
-  border: 2px solid black;
+export type ProjectLinkProps = {
+  isOn: boolean;
+}
+
+export type ProjectCardProps = {
+  isOn: boolean;
+}
+
+export const ProjectCard = styled.li<ProjectCardProps>`
+  border: 2px solid ${({ isOn }) => isOn ? 'white' : 'black'};;
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -9,11 +17,11 @@ export const ProjectCard = styled.li`
   min-height: 138px;
   &:hover {
     cursor: pointer;
-    border-color: white;
+    border-color: ${({ isOn }) => isOn ? 'hsl(166.6 100% 37.72%)' : 'white'};;
   }
 `
-export const ProjectLink = styled.a`
-  color: black;
+export const ProjectLink = styled.a<ProjectLinkProps>`
+  color: ${({ isOn }) => isOn ? 'white' : 'black'};
   text-decoration: none;
   min-height: 138px;
 `

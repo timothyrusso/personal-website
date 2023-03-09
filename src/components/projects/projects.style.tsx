@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export type LinkProps = {
+  isOn: boolean;
+}
+
 export const Projects = styled.section`
   margin-bottom: 35px;;
 `
@@ -22,10 +26,10 @@ export const ProjectEnding = styled.div`
   padding: 0;
 `
 
-export const Link = styled.a`
-  color: black;
+export const Link = styled.a<LinkProps>`
+  color: ${({ isOn }) => isOn ? 'white' : 'black'};
   &:hover {
     cursor: pointer;
-    color: white;
+    color: ${({ isOn }) => isOn ? 'hsl(166.6 100% 37.72%)' : 'white'};
   }
 `

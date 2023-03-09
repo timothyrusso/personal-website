@@ -1,10 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 import './fonts/fonts.css';
 
-export const GlobalStyle = createGlobalStyle`
+type GlobalStyleProps = {
+    isOn: boolean;
+}
+
+export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     body {
-        background-color: hsl(166.6 100% 37.72%);
-        color: black;
+        background-color: ${({ isOn }) => isOn ? 'black' : 'hsl(166.6 100% 37.72%)'};
+        color: ${({ isOn }) => isOn ? 'white' : 'black'};
         max-width: 980px !important;
         margin: auto;
         font-family: 'Inter', sans-serif;
