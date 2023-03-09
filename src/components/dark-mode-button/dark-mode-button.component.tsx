@@ -1,11 +1,13 @@
 import { FC } from "react"
+import { DarkModeButton } from "./dark-mode-button.style"
 
 type DarkModeButtonComponentProps = {
     toggle: () => void;
+    isOn: boolean;
 }
 
-export const DarkModeButtonComponent: FC<DarkModeButtonComponentProps> = ({ toggle }) => {
+export const DarkModeButtonComponent: FC<DarkModeButtonComponentProps> = ({ toggle, isOn }) => {
     return (
-        <button style={{ width: '40px', backgroundColor: 'red', height: '40px', alignSelf: 'center' }} onClick={() => toggle()} />
+        <DarkModeButton onClick={() => toggle()} isOn={isOn} />
     )
 }

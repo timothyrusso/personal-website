@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle isOn={value} />
-      <NavbarComponent toggle={toggle} />
+      <NavbarComponent toggle={toggle} isOn={value} />
       <SpacerComponent />
       <DescriptionComponent />
       <ProjectsComponent isOn={value} />

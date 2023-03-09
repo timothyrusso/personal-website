@@ -9,7 +9,7 @@ export type ProjectCardProps = {
 }
 
 export const ProjectCard = styled.li<ProjectCardProps>`
-  border: 2px solid ${({ isOn }) => isOn ? 'white' : 'black'};;
+  border: 2px solid ${({ isOn }) => isOn ? 'white' : 'black'};
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -17,7 +17,7 @@ export const ProjectCard = styled.li<ProjectCardProps>`
   min-height: 138px;
   &:hover {
     cursor: pointer;
-    border-color: ${({ isOn }) => isOn ? 'hsl(166.6 100% 37.72%)' : 'white'};;
+    border-color: ${({ isOn }) => isOn ? 'hsl(166.6 100% 37.72%)' : 'white'};
   }
 `
 export const ProjectLink = styled.a<ProjectLinkProps>`
