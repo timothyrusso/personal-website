@@ -5,12 +5,13 @@ import { SpacerComponent } from './components/spacer/spacer.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <TitleComponent />
+      <NavbarComponent />
       <SpacerComponent />
       <DescriptionComponent />
       <ProjectsComponent />
