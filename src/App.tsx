@@ -7,8 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { useDarkModeToggle } from './hooks/useDarkModeToggle';
 
 const App = () => {
-
-  const {value, toggle} = useDarkModeToggle(false);
+  const { value, toggle } = useDarkModeToggle(false);
 
   return (
     <>
@@ -19,8 +18,7 @@ const App = () => {
       <ProjectsComponent isOn={value} />
       <ContactsComponent isOn={value} />
     </>
-
   );
-}
+};
 
 export default App;

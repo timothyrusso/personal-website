@@ -1,15 +1,15 @@
 @font-face {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-style: normal;
-    src: url('./inter/Inter-Bold.ttf') format('truetype');
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Inter';
-    font-weight: 600;
-    font-style: normal;
-    src: url('./inter/Inter-SemiBold.ttf') format('truetype');
-    font-display: swap;
-  }
+  font-family: 'Inter';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./inter/Inter-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: normal;
+  src: url('./inter/Inter-SemiBold.ttf') format('truetype');
+  font-display: swap;
+}
