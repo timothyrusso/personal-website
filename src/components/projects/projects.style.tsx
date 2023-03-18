@@ -1,8 +1,6 @@
+import { useContext } from 'react';
 import styled from 'styled-components';
-
-export type LinkProps = {
-  isOn: boolean;
-};
+import { DarkModeContext } from '../../contexts/dark-mode-context';
 
 export const Projects = styled.section`
   margin-bottom: 35px; ;
@@ -26,10 +24,13 @@ export const ProjectEnding = styled.div`
   padding: 0;
 `;
 
-export const Link = styled.a<LinkProps>`
-  color: ${({ isOn }) => (isOn ? 'white' : 'black')};
+export const Link = styled.a.attrs(() => {
+  const { darkMode } = useContext(DarkModeContext);
+  return { darkMode };
+})`
+  color: ${({ darkMode }) => (darkMode ? 'white' : 'black')};
   &:hover {
     cursor: pointer;
-    color: ${({ isOn }) => (isOn ? 'hsl(166.6 100% 37.72%)' : 'white')};
+    color: ${({ darkMode }) => (darkMode ? 'hsl(166.6 100% 37.72%)' : 'white')};
   }
 `;

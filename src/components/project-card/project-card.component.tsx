@@ -4,24 +4,25 @@ import {
   ProjectTitle,
   ProjectLink,
 } from './project-card.style';
-import { FC } from 'react';
+import { FC, useContext } from 'react';
+import { DarkModeContext } from '../../contexts/dark-mode-context';
 
 type ProjectCardComponentProps = {
   title: string;
   link: string;
   description: string;
-  isOn: boolean;
 };
 
 export const ProjectCardComponent: FC<ProjectCardComponentProps> = ({
   title,
   link,
   description,
-  isOn,
 }) => {
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <ProjectCard isOn={isOn}>
-      <ProjectLink href={link} target="_blank" isOn={isOn}>
+    <ProjectCard darkMode={darkMode}>
+      <ProjectLink href={link} target="_blank" darkMode={darkMode}>
         <ProjectTitle>{title}</ProjectTitle>
         <ProjectDescription>{description}</ProjectDescription>
       </ProjectLink>

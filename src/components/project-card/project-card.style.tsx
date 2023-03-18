@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export type ProjectLinkProps = {
-  isOn: boolean;
+  darkMode: boolean;
 };
 
 export type ProjectCardProps = {
-  isOn: boolean;
+  darkMode: boolean;
 };
 
 export const ProjectCard = styled.li<ProjectCardProps>`
-  border: 2px solid ${({ isOn }) => (isOn ? 'white' : 'black')};
+  border: 2px solid ${({ darkMode }) => (darkMode ? 'white' : 'black')};
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -17,11 +17,12 @@ export const ProjectCard = styled.li<ProjectCardProps>`
   min-height: 138px;
   &:hover {
     cursor: pointer;
-    border-color: ${({ isOn }) => (isOn ? 'hsl(166.6 100% 37.72%)' : 'white')};
+    border-color: ${({ darkMode }) =>
+      darkMode ? 'hsl(166.6 100% 37.72%)' : 'white'};
   }
 `;
 export const ProjectLink = styled.a<ProjectLinkProps>`
-  color: ${({ isOn }) => (isOn ? 'white' : 'black')};
+  color: ${({ darkMode }) => (darkMode ? 'white' : 'black')};
   text-decoration: none;
   min-height: 138px;
 `;

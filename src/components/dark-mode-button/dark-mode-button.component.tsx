@@ -1,14 +1,11 @@
-import { FC } from 'react';
+import { useContext } from 'react';
+import { DarkModeContext } from '../../contexts/dark-mode-context';
 import { DarkModeButton } from './dark-mode-button.style';
 
-type DarkModeButtonComponentProps = {
-  toggle: () => void;
-  isOn: boolean;
-};
+export const DarkModeButtonComponent = () => {
+  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
 
-export const DarkModeButtonComponent: FC<DarkModeButtonComponentProps> = ({
-  toggle,
-  isOn,
-}) => {
-  return <DarkModeButton onClick={() => toggle()} isOn={isOn} />;
+  return (
+    <DarkModeButton onClick={() => toggleDarkMode()} darkMode={darkMode} />
+  );
 };

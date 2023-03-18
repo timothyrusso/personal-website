@@ -3,13 +3,13 @@ import sunLogo from '../../assets/sun.png';
 import moonLogo from '../../assets/moon.png';
 
 export type DarkModeButtonProps = {
-  isOn: boolean;
+  darkMode: boolean;
 };
 
 export const DarkModeButton = styled.button<DarkModeButtonProps>`
   min-width: 26px;
-  background-image: ${({ isOn }) =>
-    isOn ? `url(${sunLogo})` : `url(${moonLogo})`};
+  background-image: ${({ darkMode }) =>
+    darkMode ? `url(${sunLogo})` : `url(${moonLogo})`};
   min-height: 26px;
   align-self: center;
   border: none;

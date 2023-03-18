@@ -1,13 +1,8 @@
 import { Projects, ProjectsGrid, ProjectEnding, Link } from './projects.style';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { projects } from '../../utils/constants';
-import { FC } from 'react';
 
-export type ProjectsComponentProps = {
-  isOn: boolean;
-};
-
-export const ProjectsComponent: FC<ProjectsComponentProps> = ({ isOn }) => {
+export const ProjectsComponent = () => {
   return (
     <Projects>
       <h2>Projects</h2>
@@ -19,18 +14,13 @@ export const ProjectsComponent: FC<ProjectsComponentProps> = ({ isOn }) => {
               title={project.title}
               link={project.link}
               description={project.description}
-              isOn={isOn}
             />
           );
         })}
       </ProjectsGrid>
       <ProjectEnding>
         More projects available on my{' '}
-        <Link
-          href="https://github.com/timothyrusso"
-          target="_blank"
-          isOn={isOn}
-        >
+        <Link href="https://github.com/timothyrusso" target="_blank">
           GitHub
         </Link>{' '}
         profile.
