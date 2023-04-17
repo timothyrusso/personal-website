@@ -34,3 +34,15 @@ export const Link = styled.a.attrs(() => {
     color: ${({ darkMode }) => (darkMode ? 'hsl(166.6 100% 37.72%)' : 'white')};
   }
 `;
+
+export const IconLink = styled.a`
+  align-self: center;
+  margin-top: 25px;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    max-width: 24px;
+    max-height: 24px;
+  }
+`;

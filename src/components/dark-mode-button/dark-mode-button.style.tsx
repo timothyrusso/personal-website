@@ -7,10 +7,10 @@ export type DarkModeButtonProps = {
 };
 
 export const DarkModeButton = styled.button<DarkModeButtonProps>`
-  min-width: 24px;
+  min-width: 22px;
   background-image: ${({ darkMode }) =>
     darkMode ? `url(${sunLogo})` : `url(${moonLogo})`};
-  min-height: 24px;
+  min-height: 22px;
   align-self: center;
   border: none;
   background-repeat: no-repeat;
