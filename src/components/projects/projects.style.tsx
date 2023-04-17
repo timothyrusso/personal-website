@@ -38,6 +38,7 @@ export const Link = styled.a.attrs(() => {
 export const IconLink = styled.a`
   align-self: center;
   margin-top: 25px;
+  margin-left: 10px;
   &:hover {
     cursor: pointer;
   }

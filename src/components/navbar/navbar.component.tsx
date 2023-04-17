@@ -13,10 +13,15 @@ export const NavbarComponent = () => {
   return (
     <Navbar>
       <TitleComponent />
-      <DarkModeButtonComponent />
-      <IconLink href="https://github.com/timothyrusso" target="_blank">
-        <img src={darkMode ? GitHubLogoDark : GitHubLogo} alt="GitHub logo" />
-      </IconLink>
+      <div style={{ display: 'flex' }}>
+        <DarkModeButtonComponent />
+        <IconLink
+          href="https://github.com/timothyrusso/personal-website"
+          target="_blank"
+        >
+          <img src={darkMode ? GitHubLogoDark : GitHubLogo} alt="GitHub logo" />
+        </IconLink>
+      </div>
     </Navbar>
   );
 };
