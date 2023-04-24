@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import sunLogo from '../../assets/sun.png';
+import sunLogo from '../../assets/sun.svg';
 import moonLogo from '../../assets/moon.png';
 
 export type DarkModeButtonProps = {
