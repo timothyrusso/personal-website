@@ -3,7 +3,7 @@ export const projects = [
     title: 'fabrikam-global',
     link: 'https://github.com/timothyrusso/fabrikam-global-webapp-frontend',
     description:
-      'Full stack data entry application built with React.js, TypeScript, Redux, Chakra UI, React Hook Form, Node.js, Express.js and Microsoft SQL',
+      'Full stack data entry application built with React.js, TypeScript, Redux, Chakra UI, React Hook Form, Node.js, Express.js and PostgreSQL',
     id: 1,
   },
   {
