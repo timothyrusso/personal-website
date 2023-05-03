@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { DarkModeContext } from '../../contexts/dark-mode-context';
 
 export const Projects = styled.section`
-  margin-bottom: 35px; ;
+  margin-bottom: 35px;
 `;
 
 export const ProjectsGrid = styled.ul`
@@ -39,11 +39,12 @@ export const IconLink = styled.a`
   align-self: center;
   margin-top: 25px;
   margin-left: 10px;
+  max-height: 25px;
   &:hover {
     cursor: pointer;
   }
   img {
-    max-width: 24px;
-    max-height: 24px;
+    max-width: 25px;
+    max-height: 25px;
   }
 `;
