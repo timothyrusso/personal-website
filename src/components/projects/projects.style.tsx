@@ -39,12 +39,12 @@ export const IconLink = styled.a`
   align-self: center;
   margin-top: 25px;
   margin-left: 10px;
-  max-height: 25px;
+  max-height: 24px;
   &:hover {
     cursor: pointer;
   }
   img {
-    max-width: 25px;
-    max-height: 25px;
+    max-width: 24px;
+    max-height: 24px;
   }
 `;
